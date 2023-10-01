@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Dipsundar">
+  <meta name="description" content="makeing my first project">
+  <link rel="icon" href="html5.png">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="style/adda.css">
+</head>
+<body>
+  <h3 class="title">Rock Paper Scissors</h3>
+  <button onclick=" 
+   playgame('rock');"
+   class="move-button">
+   <img src="rock.png" class="move-icon"></button>
+
+  <button onclick="
+
+   playgame('paper');
+
+  "class="move-button"><img src="paper.png" class="move-icon"></button>
+
+
+  <button onclick="
+   playgame('scissors')  
+  " class="move-button"><img src="scissors.png" class="move-icon"></button>
+  
+<p class="js-result result"></p>
+<p class="js-moves"></p>
+<p class="js-score score"></p>
+
+
+  <button onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+   localStorage.removeItem('score');
+   updateScoreElement();
+  " class="reset-score-button">Reset score</button>
+
+  <script src="script/adda.js"></script>
+</body>
+</html>
